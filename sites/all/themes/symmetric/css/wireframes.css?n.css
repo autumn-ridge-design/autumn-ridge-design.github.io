@@ -1,0 +1,66 @@
+/** Include .with-wireframes class on all items so styles are conditionally applied **/
+
+/* Override zen/wireframes.css  */
+  .with-wireframes #header-inner,
+  .with-wireframes #content-inner,
+  .with-wireframes #content-inner>*,
+  .with-wireframes #navbar-inner,
+  .with-wireframes #breadcrumb-inner,
+  .with-wireframes #sidebar-left-inner,
+  .with-wireframes #sidebar-right-inner,
+  .with-wireframes #footer-inner,
+  .with-wireframes #comments
+  {
+	margin: 0;
+	padding:10px;
+    border: 0px solid #fff;
+  }
+
+/* Set wireframe borders only around specific elements */
+  .with-wireframes #page,
+  .with-wireframes #header-inner,
+  .with-wireframes #content-inner,
+  .with-wireframes #navbar-inner,
+  .with-wireframes #breadcrumb-inner,
+  .with-wireframes #sidebar-left-inner,
+  .with-wireframes #sidebar-right-inner,
+  .with-wireframes #footer-inner,
+  .with-wireframes #closure-blocks
+  {
+    border: 1px solid #ccc;
+  }
+
+/* Adjust padding and alignment */
+  .with-wireframes #content-inner {padding-top:0;}
+  .with-wireframes #content-inner h1 {line-height: 1em;}
+
+
+/* Center #page */
+  .with-wireframes #page, .with-wireframes #closure-blocks {
+	  margin: 0 auto;
+  }
+  
+  
+/* Remove #closure-blocks padding and offset from bottom of page */
+  .with-wireframes #closure-blocks
+  {
+    padding: 0;
+	margin-top:50px;
+  }
+  
+  
+/* Clean up $comments output since comments_display module breaks FCKeditor's javascript */
+#comment-form .textarea-identifier, #comment-form fieldset {display: none;}
+
+/* De-emphisize Devel block appearance */
+#block-menu-devel h3, #block-menu-devel a {font-weight: normal;}
+
+/* News (ttga) pattern - inline list */
+.news-nav li {list-style-type: none; display: inline;}
+	.news-nav li a {margin-right: 10px;}
+	
+/* using divs for wireframe "images */
+div.image {color: #fff; background-color: #fff; border: 1px solid black;}
+div.inline-image {margin: 0pt 0pt 20px 20px; color: #fff; float:right;}
+div.list-image {margin: 0pt 20px 20px; float: left; clear: both;}
+	div.list-image a {color: #fff;display:block;}

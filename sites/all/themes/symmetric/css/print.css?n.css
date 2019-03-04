@@ -1,0 +1,75 @@
+/* $Id: print.css,v 1.1.2.1 2009/02/13 06:40:02 johnalbin Exp $ */
+
+/* underline all links */
+  a:link, a:visited
+  {
+    text-decoration: underline !important;
+  }
+
+  /* Don't underline header */
+  #site-name a:link,
+  #site-name a:visited
+  {
+    text-decoration: none !important;
+  }
+
+/* CSS2 selector to add visible href after links */
+  #content a:link:after,
+  #content a:visited:after
+  {
+    content: " (" attr(href) ") ";
+    font-size: 0.8em;
+    font-weight: normal;
+  }
+
+/* Show header/footer info regions */
+  #print-header, #print-footer {display:block; visibility:visible;}
+  	#print-header {/*border-bottom: 1px solid #666;*/ margin-bottom:20px;}
+	#print-footer {border-top: 1px solid #666; margin-top:20px; padding-top:20px;}
+	
+	#print-header table, #print-footer table {width: 100%;margin-top:20px;}
+	#print-header p, #print-footer p {margin:0;}
+
+/* Un-float the content */
+  #content,
+  #content-inner
+  {
+    /*float: none;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;*/
+  }
+
+/* Turn off any background colors or images */
+  body,
+  #page, #page-inner,
+  #main, #main-inner,
+  #content, #content-inner
+  {
+    /*color: #000;
+    background-color: transparent !important;
+    background-image: none !important;*/
+  }
+
+/* Hide sidebars and nav elements */
+  #skip-to-nav, #navbar, #sidebar-left, #sidebar-right, #footer,
+  .breadcrumb, div.tabs, .links, .taxonomy,
+  .book-navigation, .forum-topic-navigation, .pager, .feed-icons
+  {
+    /*visibility: hidden;
+    display: none;*/
+  }
+
+/* Hide external comments at bottom of page */
+  #comments {
+	  visibility:hidden;
+	  display:none;
+  }
+  
+  #closure-blocks {border:none;}
+
+/* Otherwise, Firefox clips the content after the first page. */
+  #page
+  {
+    overflow-y: visible;
+  }

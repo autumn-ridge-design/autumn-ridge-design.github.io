@@ -1,0 +1,89 @@
+
+/* text */
+a, a:link, a:visited {text-decoration:none; color: #990000;}
+h1, h1.title {font-size: 24px; margin-bottom: .6em; margin-top:1em;}
+
+/* default colors */
+body {background-color: #513127;}
+#page {width: 798px; margin: 60px auto; background-color: #f0eeda; border: 1px solid #f0eeda; font-size: 11px; line-height:14px;}
+
+/* different interior */
+.page-overview #page {background-color: #b85918; color: #f0eeda; background-image: url(../images/ard_background-overview.jpg); background-repeat:no-repeat; background-position: left 170px;}
+.page-services #page {background-color: #7c1d20; color: #f0eeda; background-image: url(../images/ard_background-services.jpg); background-repeat:no-repeat; background-position: left 140px;}
+
+/*different interior and exterior */
+body.page-hardscapes-structures,
+body.page-decorative-plantings,
+body.page-water-features {background-color: #b85918; color: #58595b;}
+.page-hardscapes-structures #page,
+.page-decorative-plantings #page,
+.page-water-features #page {background-color: #d1cfbe; color: #58595b;}
+
+body.page-contact-us {background-color: #b8c892;}
+.page-contact-us #page {background-color: #513127; color: #f0eeda; background-image: url(../images/ard_background-contact.jpg); background-repeat:no-repeat; background-position: left 270px;}
+
+/* images */
+.front #page {background-image:url(../images/ard_background-home.jpg); background-repeat:no-repeat;}
+
+
+
+/* general layout */
+#navbar-inner {padding: 0 30px;}
+#content-inner {padding: 17px 80px 17px 320px;}
+	.section-admin #content-inner,
+	.section-node-edit #content-inner {padding: 17px;}
+#navbar {height: 110px; margin-top:20px; background-image: url(../images/ard_navbar.png); background-repeat:repeat-x;}
+#logo {float: right;margin-top:12px; margin-right:0;}
+.with-navbar #content {margin-top:110px;}
+#primary {margin-top: 65px; float: left;}
+#content, .no-sidebars #content {width: 798px; margin-right: -798px;}
+	#content-header {min-height: 0;}
+	#content-header, .node-type-gallery h1 {margin-left: -10px;}
+	#content-area {min-height:370px;}
+
+/* gallery layout */
+
+.page-hardscapes-structures #content-inner,
+.page-decorative-plantings #content-inner,
+.page-water-features #content-inner {padding: 17px 60px 34px;}
+.page-hardscapes-structures #content-inner .body,
+.page-decorative-plantings #content-inner .body,
+.page-water-features #content-inner .body {width: 280px; float: left;}
+
+.node-content {min-height: 314px;}
+p.gallery-link {margin-bottom:0;}
+
+.slideshow-main {width: 395px; float: right; margin-right: -30px; margin-bottom:2em;}
+.views-slideshow-controls-top {position: absolute; width: 375px;}
+
+#views_slideshow_cycle_prev_gallery-default,
+#views_slideshow_cycle_next_gallery-default {display: block; text-indent: -999em; height: 335px; width: 30px; outline: none;}
+
+#views_slideshow_cycle_prev_gallery-default {background: url(../skin/prev-horizontal.png) no-repeat left center; float: left;}
+#views_slideshow_cycle_next_gallery-default {background: url(../skin/next-horizontal.png) no-repeat right center; float: right;}
+
+#views_slideshow_cycle_teaser_section_gallery-default {margin: 0 30px;}
+	#views_slideshow_cycle_teaser_section_gallery-default img {border: 1px solid #333;}
+
+.slideshow-thumbs {clear: both;}
+
+.views-field-field-gallery-items-data,
+.views-field-field-gallery-items-data-1 {font-size: 10px;}
+
+
+/*homepage layout */
+.front #navbar {height: 98px;}
+.front #content {margin-top: 98px; height: 501px;}
+.front #content-header {height:0; min-height:0;}
+.front #content-inner {padding: 0;}
+
+.page-contact-us #content-header {position:absolute; top: 170px; right: 70px}
+.page-contact-us #content-inner {min-height: 410px;}
+
+/*navigation*/
+#navbar {font-size: 9px;}
+	#navbar li {background-image: none; padding:0;}
+	#navbar a, #navbar a:link, #navbar a:visited {color: #58595b; font-weight:normal; padding: 5px 10px;}
+		#navbar li.first a {padding-left:0;}
+		#navbar #logo a {padding-right:0;}
+		#navbar a:hover, #navbar li a.active {color: #990000;}
